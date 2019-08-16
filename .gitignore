@@ -1,7 +1,7 @@
 node_modules/
 accounts/
 .vscode
-.DS_STORE/
+.DS_STORE
 target
 /lib
 /classes
