@@ -3,12 +3,12 @@ accounts/
 .vscode
 .DS_STORE
 target
-/lib
-/classes
-/checkouts
+lib
+classes
+checkouts
 pom.xml
 pom.xml.asc
 *.jar
 *.class
-/.lein-*
-/.nrepl-port
+.lein-*
+.nrepl-port
