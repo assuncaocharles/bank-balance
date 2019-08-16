@@ -1,0 +1,17 @@
+{
+    "extends": "tslint-functional-preset",
+    "linterOptions": {
+        "exclude": [
+            "src/**/*.test.ts"
+        ]
+    },
+    "rules": {
+        "max-line-length": [true, 120],
+        "function-name": false,
+        "trailing-comma": false,
+        "import-name": false,
+        "variable-name": false,
+        "semicolon": false,
+        "interface-name": false
+    }
+}

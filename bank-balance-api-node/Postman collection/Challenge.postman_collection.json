@@ -1,0 +1,79 @@
+{
+  "info": {
+    "_postman_id": "7de72ed8-46e3-416a-b9f1-660cf681a51d",
+    "name": "Bank Balance Challenge",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Transaction - Deposit",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"userID\": 1,\n\t\"value\": 300.5\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transaction",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "transaction"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Check Balance",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/balance/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "balance", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Transaction - Withdraw",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"userID\": 1,\n\t\"value\": -100.00\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transaction",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "transaction"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

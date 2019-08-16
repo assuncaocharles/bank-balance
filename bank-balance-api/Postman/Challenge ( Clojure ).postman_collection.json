@@ -1,0 +1,91 @@
+{
+  "info": {
+    "_postman_id": "ec32e809-3488-4d92-a6ec-3427da95d56a",
+    "name": "Bank Balance Challenge ( Clojure )",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Check Balance",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/balance/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["balance", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Transaction - DEPOSIT",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"id\": 1,\n\t\"value\": 10.00\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/transaction",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["transaction"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Transaction - WITHDRAW",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"id\": 1,\n\t\"value\": -10\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/transaction",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["transaction"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Check History",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/history/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["history", "1"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

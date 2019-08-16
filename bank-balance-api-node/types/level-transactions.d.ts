@@ -1,0 +1,38 @@
+export = transaction;
+declare function transaction(db: any, options?: any): transactionObject;
+declare interface transactionObject {
+  addListener(type: any, listener: any): any;
+  approximateSize(args: any): any;
+  batch(arr_: any, options: any, callback: any, ...args: any[]): any;
+  close(cb: any): any;
+  commit(cb: any): any;
+  createKeyStream(options: any): any;
+  createReadStream(options: any): any;
+  createValueStream(options: any): any;
+  defer(fn: any): any;
+  del(key_: any, options: any, callback: any): any;
+  emit(type: any, args: any): any;
+  eventNames(): any;
+  get(key_: any, options: any, callback: any): any;
+  getMaxListeners(): any;
+  isClosed(): any;
+  isOpen(): any;
+  keyStream(options: any): any;
+  listenerCount(type: any): any;
+  listeners(type: any): any;
+  lock(key: any, options: any, cb: any): any;
+  off(type: any, listener: any): any;
+  on(type: any, listener: any): any;
+  once(type: any, listener: any): any;
+  open(cb: any): any;
+  prependListener(type: any, listener: any): any;
+  prependOnceListener(type: any, listener: any): any;
+  put(key_: any, value_: any, options: any, callback: any): any;
+  rawListeners(type: any): any;
+  readStream(options: any): any;
+  removeAllListeners(type: any, ...args: any[]): any;
+  removeListener(type: any, listener: any): any;
+  rollback(err: any, cb: any): any;
+  setMaxListeners(n: any): any;
+  valueStream(options: any): any;
+}
