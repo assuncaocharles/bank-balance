@@ -40,7 +40,7 @@
     "jest": "^24.8.0",
     "level": "^5.0.1",
     "level-transactions": "^2.1.4",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "nodemon": "^1.19.0",
     "supertest": "^4.0.2",
     "ts-jest": "^24.0.2",
