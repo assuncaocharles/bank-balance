@@ -16,7 +16,7 @@
     "react-dom": "^16.8.6",
     "react-number-format": "^4.0.8",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-text-mask": "^5.4.3",
     "typescript": "3.5.3",
     "use-async-effect": "^2.1.0"
