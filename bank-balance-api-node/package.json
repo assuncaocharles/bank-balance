@@ -36,7 +36,7 @@
     "@types/supertest": "^2.0.7",
     "body-parser": "^1.18.3",
     "dotenv": "^7.0.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "jest": "^24.8.0",
     "level": "^5.0.1",
     "level-transactions": "^2.1.4",
